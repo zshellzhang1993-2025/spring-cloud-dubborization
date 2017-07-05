@@ -1,6 +1,6 @@
 package cc.zshell.eureka.consumer.config;
 
-import cc.zshell.eureka.spring.ReferenceAnnotationProcessor;
+import cc.zshell.eureka.consumer.api.ReferenceAnnotationProcessor;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

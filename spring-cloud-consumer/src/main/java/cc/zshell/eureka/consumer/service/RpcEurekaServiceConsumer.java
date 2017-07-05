@@ -1,6 +1,6 @@
 package cc.zshell.eureka.consumer.service;
 
-import cc.zshell.eureka.spring.Reference;
+import cc.zshell.eureka.consumer.api.Reference;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

@@ -1,4 +1,4 @@
-package cc.zshell.eureka.spring;
+package cc.zshell.eureka.consumer.api;
 
 import cc.zshell.eureka.common.JsonUtil;
 import org.slf4j.Logger;

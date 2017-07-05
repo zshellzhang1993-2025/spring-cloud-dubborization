@@ -1,4 +1,4 @@
-package cc.zshell.eureka.spring;
+package cc.zshell.eureka.consumer.api;
 
 import org.springframework.beans.factory.support.BeanDefinitionBuilder;
 import org.springframework.beans.factory.xml.AbstractSingleBeanDefinitionParser;

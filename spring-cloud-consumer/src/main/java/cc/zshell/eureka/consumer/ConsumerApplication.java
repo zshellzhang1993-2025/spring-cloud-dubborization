@@ -25,6 +25,9 @@ public class ConsumerApplication {
     @Resource
     private RpcEurekaServiceConsumer rpcEurekaServiceConsumer;
 
+    /**
+     * 对比测试之 rest 风格调用
+     */
     @RequestMapping("/rest/list")
     public List<String> getRestList(String query) {
         List<String> result = restEurekaServiceConsumer.getList(query);
@@ -32,6 +35,9 @@ public class ConsumerApplication {
         return result;
     }
 
+    /**
+     * 对比测试之 dubbo 风格调用
+     */
     @RequestMapping("/rpc/list")
     public List<String> getRpcList(String query) {
         List<String> result = rpcEurekaServiceConsumer.getList(query);

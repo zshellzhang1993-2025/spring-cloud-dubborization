@@ -1,4 +1,4 @@
-package cc.zshell.eureka.core;
+package cc.zshell.eureka.consumer.api;
 
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;

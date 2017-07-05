@@ -1,4 +1,4 @@
-package cc.zshell.eureka.spring;
+package cc.zshell.eureka.consumer.api;
 
 import java.lang.annotation.*;
 

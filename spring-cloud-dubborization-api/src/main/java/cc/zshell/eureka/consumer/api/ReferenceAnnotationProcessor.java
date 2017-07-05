@@ -1,4 +1,4 @@
-package cc.zshell.eureka.spring;
+package cc.zshell.eureka.consumer.api;
 
 import com.google.common.base.Strings;
 import org.slf4j.Logger;
@@ -6,12 +6,14 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.core.annotation.AnnotationUtils;
+import org.springframework.stereotype.Service;
 
 import java.lang.reflect.Field;
 
 /**
  * 扫描所有的 beans, 动态代理所有的 {@link Reference}
  */
+@Service
 public class ReferenceAnnotationProcessor implements BeanPostProcessor {
 
     private static final Logger logger = LoggerFactory.getLogger(ReferenceAnnotationProcessor.class);
