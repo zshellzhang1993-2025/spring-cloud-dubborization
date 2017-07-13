@@ -6,7 +6,7 @@ import org.springframework.beans.factory.xml.NamespaceHandlerSupport;
 import org.springframework.util.StringUtils;
 import org.w3c.dom.Element;
 
-class ReferenceNamespaceHandler extends NamespaceHandlerSupport {
+class ConsumerNamespaceHandler extends NamespaceHandlerSupport {
 
     @Override
     public void init() {
@@ -18,7 +18,7 @@ class ReferenceNamespaceHandler extends NamespaceHandlerSupport {
 
         @Override
         protected Class<?> getBeanClass(Element element) {
-            return ReferenceAnnotationProcessor.class;
+            return ConsumerAnnotationProcessor.class;
         }
 
         @Override

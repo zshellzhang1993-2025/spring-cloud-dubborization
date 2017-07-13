@@ -103,6 +103,12 @@
             <artifactId>jackson-core</artifactId>
             <version>2.6.0</version>
         </dependency>
+
+        <dependency>
+            <groupId>cc.zshell</groupId>
+            <artifactId>spring-cloud-dubborization-api</artifactId>
+            <version>${project.version}</version>
+        </dependency>
     </dependencies>
 
     <build>

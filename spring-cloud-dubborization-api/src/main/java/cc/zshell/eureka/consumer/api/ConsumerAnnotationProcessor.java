@@ -11,12 +11,12 @@ import org.springframework.stereotype.Service;
 import java.lang.reflect.Field;
 
 /**
- * 扫描所有的 beans, 动态代理所有的 {@link Reference}
+ * 扫描所有的 beans, 动态代理所有的 {@link Consumer}
  */
 @Service
-public class ReferenceAnnotationProcessor implements BeanPostProcessor {
+public class ConsumerAnnotationProcessor implements BeanPostProcessor {
 
-    private static final Logger logger = LoggerFactory.getLogger(ReferenceAnnotationProcessor.class);
+    private static final Logger logger = LoggerFactory.getLogger(ConsumerAnnotationProcessor.class);
 
     @Override
     public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
@@ -31,7 +31,7 @@ public class ReferenceAnnotationProcessor implements BeanPostProcessor {
 
     private void parseFields(final Object bean, final Field[] fields) {
         for (final Field field : fields) {
-            Reference annotation = AnnotationUtils.getAnnotation(field, Reference.class);
+            Consumer annotation = AnnotationUtils.getAnnotation(field, Consumer.class);
             if (annotation == null) continue;
 
             String serviceNamespace = annotation.value();

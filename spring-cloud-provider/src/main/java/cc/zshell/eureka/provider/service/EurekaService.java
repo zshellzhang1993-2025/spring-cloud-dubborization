@@ -1,4 +1,4 @@
-package com.bee.tc.eureka.service;
+package cc.zshell.eureka.provider.service;
 
 import java.util.List;
 

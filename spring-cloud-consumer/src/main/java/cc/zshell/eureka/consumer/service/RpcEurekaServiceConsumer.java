@@ -1,6 +1,6 @@
 package cc.zshell.eureka.consumer.service;
 
-import cc.zshell.eureka.consumer.api.Reference;
+import cc.zshell.eureka.consumer.api.Consumer;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -12,7 +12,7 @@ import java.util.List;
 public class RpcEurekaServiceConsumer {
 
     // spring 风格注入
-    @Reference("test-eureka-provider")
+    @Consumer("test-eureka-provider")
     private EurekaService eurekaService;
 
     public List<String> getList(String query) {

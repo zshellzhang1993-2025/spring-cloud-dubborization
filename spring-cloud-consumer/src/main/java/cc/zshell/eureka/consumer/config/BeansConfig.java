@@ -1,6 +1,6 @@
 package cc.zshell.eureka.consumer.config;
 
-import cc.zshell.eureka.consumer.api.ReferenceAnnotationProcessor;
+import cc.zshell.eureka.consumer.api.ConsumerAnnotationProcessor;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -16,8 +16,8 @@ public class BeansConfig {
     }
 
     @Bean
-    public ReferenceAnnotationProcessor autoScanner() {
-        return new ReferenceAnnotationProcessor();
+    public ConsumerAnnotationProcessor autoScanner() {
+        return new ConsumerAnnotationProcessor();
     }
 
 }
