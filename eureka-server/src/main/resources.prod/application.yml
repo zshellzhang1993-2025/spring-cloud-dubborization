@@ -1,0 +1,53 @@
+---
+spring:
+  profiles: node1
+  application:
+    name: eureka-server1
+
+server:
+  port: 8761
+
+eureka:
+  instance:
+    hostname: l-eureka1.ops.p1.11bee.com
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
+---
+spring:
+  profiles: node2
+  application:
+    name: eureka-server2
+
+server:
+  port: 8761
+
+eureka:
+  instance:
+    hostname: l-eureka2.ops.p1.11bee.com
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
+---
+spring:
+  profiles: node3
+  application:
+    name: eureka-server3
+
+server:
+  port: 8761
+
+eureka:
+  instance:
+    hostname: l-eureka3.ops.p1.11bee.com
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/

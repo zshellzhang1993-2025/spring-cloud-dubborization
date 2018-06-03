@@ -1,0 +1,53 @@
+---
+spring:
+  profiles: node1
+  application:
+    name: eureka-server
+
+server:
+  port: 8761
+
+eureka:
+  instance:
+    hostname: l-horizonops1.beta.p1.11bee.com
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://l-horizonops2.beta.p1.11bee.com:8761/eureka/,http://l-horizonops3.beta.p1.11bee.com:8761/eureka/
+
+---
+spring:
+  profiles: node2
+  application:
+    name: eureka-server
+
+server:
+  port: 8761
+
+eureka:
+  instance:
+    hostname: l-horizonops2.beta.p1.11bee.com
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://l-horizonops1.beta.p1.11bee.com:8761/eureka/,http://l-horizonops3.beta.p1.11bee.com:8761/eureka/
+
+---
+spring:
+  profiles: node3
+  application:
+    name: eureka-server
+
+server:
+  port: 8761
+
+eureka:
+  instance:
+    hostname: l-horizonops3.beta.p1.11bee.com
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://l-horizonops1.beta.p1.11bee.com:8761/eureka/,http://l-horizonops2.beta.p1.11bee.com:8761/eureka/

@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: test-eureka-consumer
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://l-horizonops1.beta.p1.11bee.com:8761/eureka/,http://l-horizonops2.beta.p1.11bee.com:8761/eureka/,http://l-horizonops3.beta.p1.11bee.com:8761/eureka/http://l-horizonops1.beta.p1.11bee.com:8761/eureka/
+
+test:
+  eureka:
+    namespace: test-eureka-provider
