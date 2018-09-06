@@ -9,7 +9,7 @@ server:
 
 eureka:
   instance:
-    hostname: l-eureka1.ops.p1.11bee.com
+    hostname: xxx.com
   client:
     registerWithEureka: true
     fetchRegistry: true
@@ -27,7 +27,7 @@ server:
 
 eureka:
   instance:
-    hostname: l-eureka2.ops.p1.11bee.com
+    hostname: xxx.com
   client:
     registerWithEureka: false
     fetchRegistry: false
@@ -45,7 +45,7 @@ server:
 
 eureka:
   instance:
-    hostname: l-eureka3.ops.p1.11bee.com
+    hostname: xxx.com
   client:
     registerWithEureka: false
     fetchRegistry: false

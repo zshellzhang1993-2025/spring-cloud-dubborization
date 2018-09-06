@@ -5,7 +5,7 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://l-horizonops1.beta.p1.11bee.com:8761/eureka/,http://l-horizonops2.beta.p1.11bee.com:8761/eureka/,http://l-horizonops3.beta.p1.11bee.com:8761/eureka/http://l-horizonops1.beta.p1.11bee.com:8761/eureka/
+      defaultZone: http://xxx.com:8761/eureka/,http://xxx.com:8761/eureka/,http://xxx.com:8761/eureka/,http://xxx.com:8761/eureka/
 
 test:
   eureka:
